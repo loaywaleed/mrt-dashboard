@@ -13,7 +13,10 @@ var app = {};
 var option1;
 var option2;
 
-option1 = {
+var rpmValue = 700
+var speedValue = 70
+
+optionRpm = {
   series: [
     {
       type: 'gauge',
@@ -59,7 +62,7 @@ option1 = {
       },
       data: [
         {
-          value: 7
+          value: rpmValue / 100
         }
       ],
       min: 0,
@@ -68,7 +71,7 @@ option1 = {
   ]
 };
 
-option2 = {
+optionSpeed = {
   series: [
     {
       type: 'gauge',
@@ -114,19 +117,19 @@ option2 = {
       },
       data: [
         {
-          value: 70
+          value: speedValue
         }
       ]
     }
   ]
 };
 
-if (option1 && typeof option1 === 'object') {
-  myChart1.setOption(option1);
+if (optionRpm && typeof optionRpm === 'object') {
+  myChart1.setOption(optionRpm);
 }
 
-if (option2 && typeof option2 === 'object') {
-  myChart2.setOption(option2);
+if (optionSpeed && typeof optionSpeed === 'object') {
+  myChart2.setOption(optionSpeed);
 }
 
 window.addEventListener('resize', function () {
