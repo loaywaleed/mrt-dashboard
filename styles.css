@@ -1,24 +1,18 @@
-body {
-  margin: 0;
-  height: 100%;
-  background-color: #100C2A;
-}
-
 .gauge-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  height: calc(100% - 54px - 102px);
 }
 
 .gauge {
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
 }
 
 .card {
-  width: 280px;
-  height: 150px;
+  width: 250px;
+  height: 300px;
   background: rgb(17, 4, 134);
   border-radius: 15px;
   box-shadow: rgb(0, 0, 0, 0.7) 5px 10px 50px, rgb(0, 0, 0, 0.7) -5px 0px 250px;
@@ -31,10 +25,6 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
-}
-
-.card:hover {
-  box-shadow: rgb(0, 0, 0) 5px 10px 50px, rgb(0, 0, 0) -5px 0px 250px;
 }
 
 .time-text {
@@ -64,8 +54,4 @@ body {
   right: 15px;
   top: 15px;
   transition: all 0.3s ease-in-out;
-}
-
-.card:hover>.moon {
-  font-size: 23px;
 }
