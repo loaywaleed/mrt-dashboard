@@ -14,60 +14,7 @@ var option1;
 var option2;
 
 option1 = {
-series: [
-{
-  type: 'gauge',
-  progress: {
-    show: true,
-    width: 18
-  },
-  axisLine: {
-    lineStyle: {
-      width: 18
-    }
-  },
-  axisTick: {
-    show: false
-  },
-  splitLine: {
-    length: 15,
-    lineStyle: {
-      width: 2,
-      color: '#999'
-    }
-  },
-  axisLabel: {
-    distance: 25,
-    color: '#999',
-    fontSize: 20
-  },
-  anchor: {
-    show: true,
-    showAbove: true,
-    size: 25,
-    itemStyle: {
-      borderWidth: 10
-    }
-  },
-  title: {
-    show: false
-  },
-  detail: {
-    valueAnimation: true,
-    fontSize: 80,
-    offsetCenter: [0, '70%']
-  },
-  data: [
-    {
-      value: 70
-    }
-  ]
-}
-]
-};
-
-option2 = {
-    series: [
+  series: [
     {
       type: 'gauge',
       progress: {
@@ -92,7 +39,7 @@ option2 = {
       axisLabel: {
         distance: 25,
         color: '#999',
-        fontSize: 20
+        fontSize: 12,
       },
       anchor: {
         show: true,
@@ -107,7 +54,62 @@ option2 = {
       },
       detail: {
         valueAnimation: true,
-        fontSize: 80,
+        fontSize: 50,
+        offsetCenter: [0, '70%']
+      },
+      data: [
+        {
+          value: 7
+        }
+      ],
+      min: 0,
+      max: 10
+    }
+  ]
+};
+
+option2 = {
+  series: [
+    {
+      type: 'gauge',
+      progress: {
+        show: true,
+        width: 18
+      },
+      axisLine: {
+        lineStyle: {
+          width: 18
+        }
+      },
+      axisTick: {
+        show: false
+      },
+      splitLine: {
+        length: 15,
+        lineStyle: {
+          width: 2,
+          color: '#999'
+        }
+      },
+      axisLabel: {
+        distance: 25,
+        color: '#999',
+        fontSize: 12
+      },
+      anchor: {
+        show: true,
+        showAbove: true,
+        size: 25,
+        itemStyle: {
+          borderWidth: 10
+        }
+      },
+      title: {
+        show: false
+      },
+      detail: {
+        valueAnimation: true,
+        fontSize: 50,
         offsetCenter: [0, '70%']
       },
       data: [
@@ -116,20 +118,20 @@ option2 = {
         }
       ]
     }
-    ]
-    };
+  ]
+};
 
 if (option1 && typeof option1 === 'object') {
   myChart1.setOption(option1);
 }
 
 if (option2 && typeof option2 === 'object') {
-    myChart2.setOption(option2);
+  myChart2.setOption(option2);
 }
 
-  window.addEventListener('resize', function () {
-    myChart1.resize();
-    myChart2.resize();
+window.addEventListener('resize', function () {
+  myChart1.resize();
+  myChart2.resize();
 });
 
 
