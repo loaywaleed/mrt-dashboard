@@ -10,18 +10,3 @@ header {
     width: 100%;
     border: 2px solid white;
 }
-
-footer {
-    height: 100px;
-    border: 1px solid white;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-item {
-    line-height: 0.4em;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
