@@ -1,12 +1,7 @@
-body {
-    margin: 0;
-    height: 100%;
-    background-color: #100C2A;
-    color: white;
-}
+
 
 header {
-    height: 60px;
+    height: 50px;
     width: calc(100% - 4px);
     border: 2px solid white;
     display: flex;
