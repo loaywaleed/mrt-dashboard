@@ -1,8 +1,8 @@
 @font-face {
-        font-family: 'aga bold';
-        src:url('../fonts/aga\ bold.ttf') format('woff');
-        font-weight: normal;
-        font-style: normal;
+    font-family: 'aga bold';
+    src:url('../fonts/aga\ bold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 footer {
@@ -21,6 +21,7 @@ footer {
     align-items: center;
     border: 2px solid yellow;
     width: 25%;
+    font-family: 'aga bold';
 }
 
 footer .middle-footer-item {
@@ -30,15 +31,12 @@ footer .middle-footer-item {
 .footer-item h2{
     margin: 0;
     color: #fac86b;
-    /* border: 2px solid yellow; */
-    font-size: 2em;
-    font-family: 'aga bold';
+    font-size: 1.75em;
+    /* border-bottom: 1px solid #fac86b; */
 }
 
-
 .footer-item p {
-    /* border: 2px solid yellow; */
     margin: 0;
     color: white;
-    font-size: 1.2em;
+    font-size: 2.3em;
 }
