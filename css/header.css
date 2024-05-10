@@ -14,3 +14,10 @@ header {
     align-items: center;
     flex-direction: column;
 }
+
+header .logo {
+    background-image: url('../imgs/mrt_logo.png');
+    background-size: cover;
+    height: 50px;
+    width: 135px;
+}
