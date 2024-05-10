@@ -13,8 +13,8 @@ var app = {};
 var option1;
 var option2;
 
-var rpmValue = 700
-var speedValue = 70
+var rpmValue = 800
+var speedValue = 50
 
 optionRpm = {
   series: [

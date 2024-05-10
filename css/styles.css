@@ -15,19 +15,18 @@
   height: 300px;
   background: rgb(17, 4, 134);
   border-radius: 15px;
-  box-shadow: rgb(0, 0, 0, 0.7) 5px 10px 50px, rgb(0, 0, 0, 0.7) -5px 0px 250px;
+  /* box-shadow: rgb(0, 0, 0, 0.7) 5px 10px 50px, rgb(0, 0, 0, 0.7) -5px 0px 250px; */
   display: flex;
   color: white;
   justify-content: start;
-  /* position: relative; */
   flex-direction: column;
-  background: linear-gradient(to right, rgb(20, 30, 48), #100c2a32);
+  /* background: linear-gradient(to right, rgb(20, 30, 48), #100c2a32); */
+  background: rgb(20, 30, 48);
   /* background: linear-gradient(to right, #100c2a32, #100c2a32); */
   transition: all 0.3s ease-in-out;  
   border: 2px solid #fac86b9c;
   text-justify: center;
   text-align: center;
-  /* overflow: hidden; */
 }
 
 

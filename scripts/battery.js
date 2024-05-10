@@ -9,6 +9,6 @@ const monitor = (battery) => {
   indicator.innerHTML = `${percent}%`; 
 }
 
+const batteryLevel = 70
 
-
-monitor(40);
+monitor(batteryLevel);

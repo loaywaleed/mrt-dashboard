@@ -1,28 +1,22 @@
 header {
-    height: 60px;
-    width: calc(100% - 4px);
-    border: 2px solid white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+  height: 60px;
+  width: calc(100% - 4px);
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
-.time-text {
-    font-size: 40px;
-    margin-top: 0px;
-    margin-left: 15px;
-    font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  .time-sub-text {
-    font-size: 15px;
-    margin-left: 5px;
-  }
 
-/* header .logo {
-    background-image: url('../imgs/mrt_logo.png');
-    background-size: cover;
-    height: 50px;
-    width: 135px;
-} */
+.time-text {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.time-sub-text {
+  font-size: 15px;
+  margin-left: 5px;
+}

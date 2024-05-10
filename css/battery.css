@@ -16,7 +16,7 @@
 .battery {
   width: 110px;
   height: 50px;
-  border: solid 5px white;
+  border: solid 5px #fac86b;
   border-radius: 10px;
   position: relative;
   display: flex;
@@ -26,7 +26,7 @@
 .battery:before {
   content: "";
   position: absolute;
-  background: white;
+  background: #fac86b;
   border-radius: 5px;
   width: 10px;
   height: 40px;
