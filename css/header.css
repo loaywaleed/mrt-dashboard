@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    height: 50px;
+    height: 60px;
     width: calc(100% - 4px);
     border: 2px solid white;
     display: flex;
