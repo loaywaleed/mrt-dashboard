@@ -7,40 +7,54 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/battery.css">
 </head>
 <body>
   <header>
     <p class="time-text"><span id="time"></span><span class="time-sub-text" id="ampm"></span></p>
   </header>
-  <main class="gauge-container" style="height: calc(100% - 54px - 102px);">
+  <main class="gauge-container">
     <div id="container-1" class="gauge"></div>
-    <div class="middle-content">
       <div class="card">
+        <div class="card-item">
+          <h2 id="temperature">Temperature</h2>
+          <p>200 C</p>
+        </div>
+        <div class="card-item" id="battery">
+          <data class='battery status'></data>
+          <!-- <h2 id="soc">SoC</h2>
+          <p>50%</p> -->
+        </div>
+        <div class="card-item">
+          <h2 id="range">Cruising Range</h2>
+          <p>50 km</p>
+        </div>
       </div>
     </div>
     <div id="container-2" class="gauge"></div>
   </main>
   <footer>
     <div class="footer-item">
-      <h2>Current</h2>
+      <h2 id="current">Current</h2>
       <div class="ray"></div>
       <p>200 A</p>
     </div>
     <div class="footer-item middle-footer-item">
-      <h2>Distance</h2>
+      <h2 id="distance-travelled">Distance</h2>
       <div class="ray"></div>
       <p>200 km</p>
     </div>
     <div class="footer-item">
-      <h2>Voltage</h2>
+      <h2 id="voltage">Voltage</h2>
       <div class="ray"></div>
       <p>34 V</p>
     </div>
   </footer>
 
-  <script type="text/javascript" src="node_modules/echarts/dist/echarts.min.js"></script>
-  <script type="text/javascript" src="scripts/gauges.js"></script>
+  <script src="node_modules/echarts/dist/echarts.min.js"></script>
+  <script src="scripts/gauges.js"></script>
   <script src="scripts/app.js"></script>
+  <script src="scripts/battery.js"></script>
 </body>
 
 </html>

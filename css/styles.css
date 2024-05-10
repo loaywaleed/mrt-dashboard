@@ -11,40 +11,145 @@
 }
 
 .card {
-  width: 230px;
+  width: 500px;
   height: 300px;
   background: rgb(17, 4, 134);
   border-radius: 15px;
   box-shadow: rgb(0, 0, 0, 0.7) 5px 10px 50px, rgb(0, 0, 0, 0.7) -5px 0px 250px;
   display: flex;
   color: white;
-  justify-content: center;
-  position: relative;
+  justify-content: start;
+  /* position: relative; */
   flex-direction: column;
   background: linear-gradient(to right, rgb(20, 30, 48), #100c2a32);
   /* background: linear-gradient(to right, #100c2a32, #100c2a32); */
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
+  transition: all 0.3s ease-in-out;  
+  border: 2px solid #fac86b9c;
+  text-justify: center;
+  text-align: center;
+  /* overflow: hidden; */
 }
 
-.time-text {
-  font-size: 50px;
-  margin-top: 0px;
-  margin-left: 15px;
-  font-weight: 600;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.card-item {
+  margin-top: 10%;
+  font-family: 'aga bold';
+  font-size: 1.5em;
 }
 
-.time-sub-text {
-  font-size: 15px;
-  margin-left: 5px;
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --gradient-color-red: linear-gradient(90deg, 
+                          hsl(7, 89%, 46%) 15%,
+                          hsl(11, 93%, 68%) 100%);
+  --gradient-color-orange: linear-gradient(90deg, 
+                           hsl(22, 89%, 46%) 15%,
+                           hsl(54, 90%, 45%) 100%);
+  --gradient-color-yellow: linear-gradient(90deg, 
+                           hsl(54, 89%, 46%) 15%,
+                           hsl(92, 90%, 45%) 100%);
+  --gradient-color-green: linear-gradient(90deg, 
+                          hsl(92, 89%, 46%) 15%,
+                          hsl(92, 90%, 68%) 100%);
+  --text-color: #fff;
+  --body-color: hsl(0, 0%, 11%);
+  --container-color: hsl(0, 0%, 9%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Rubik', sans-serif;
+
+  --biggest-font-size: 2.5rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
 }
 
-/* .moon {
-  font-size: 20px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  transition: all 0.3s ease-in-out;
-} */
+
+
+@use 'sass:math';
+@use "sass:map";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+
+@function range($min, $max) {
+  $rnd: random();
+  @return $min + floor($rnd * (($max - $min) + 1));
+}
+
+@function randomColor() {
+  @return rgba(range(0, 255), range(0, 100), range(0, 200), 255);
+}
+
+@mixin flex-center() {
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+}
+
+@mixin flex-body() {
+  @include flex-center;
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+  --width: 10px;
+  --color: #FFFFFF;
+  --base: #AAAAAA;
+  --icon: '\26A1';
+}
+
+body {
+  @include flex-body();
+  font-family: "roboto";  
+  background: var(--base);
+}
+
+.battery {
+  width: 110px;
+  height: 50px;
+  border: solid 5px black;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:before {
+    content:'';
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    width: 10px;
+    height: 40px;
+    right: -10px;
+    top: 5px;
+  }
+  
+  &:after {
+    content:'';
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    height: 40px;
+    z-index: -1;
+    transition: all ease 100ms;
+    border: solid 5px var(--base);
+    border-radius: 10px;
+  }
+}
+
+.status {
+  &:after {
+    width: var(--width);
+    background: var(--color);
+  }
+}
