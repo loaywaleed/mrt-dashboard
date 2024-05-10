@@ -1,7 +1,5 @@
-
-
 header {
-    height: 50px;
+    height: 60px;
     width: calc(100% - 4px);
     border: 2px solid white;
     display: flex;
@@ -10,9 +8,17 @@ header {
     flex-direction: column;
 }
 
-header .logo {
+header span {
+    border: 2px solid green;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header .logo {
     background-image: url('../imgs/mrt_logo.png');
     background-size: cover;
     height: 50px;
     width: 135px;
-}
+} */
