@@ -1,7 +1,6 @@
 header {
   height: 30px;
   width: calc(100% - 4px);
-  /* border: 2px solid white; */
   display: flex;
   justify-content: space-between;
   align-items: center;

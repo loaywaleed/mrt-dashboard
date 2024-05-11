@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100% - 54px - 108px);
+  height: calc(100% - 54px - 102px);
 }
 
 .gauge {
@@ -103,3 +103,17 @@
 	rotate(-45deg) 
 	translate(2px, 1px);
 }
+
+/* Blinking animation */
+@keyframes blink {
+	0%, 100% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+  }
+  
+  .blink {
+	animation: blink 1s infinite;
+  }
