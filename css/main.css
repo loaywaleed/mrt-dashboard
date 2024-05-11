@@ -26,13 +26,13 @@
   flex-direction: column;
   background: linear-gradient(to right, rgb(20, 30, 48), #100c2a32);
   transition: all 0.3s ease-in-out;  
-  border: 2px solid #fac86b9c;
+  border: 2px solid #fac86b;
   text-justify: center;
   text-align: center;
 }
 
 .card-item {
-  margin-top: 15%;
+  margin-top: 12%;
   font-family: 'aga bold';
 }
 

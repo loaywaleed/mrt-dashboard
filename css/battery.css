@@ -7,7 +7,6 @@
   --icon: "⚡";
 }
 
-
 #battery {
   display: flex;
   justify-content: center;
@@ -50,5 +49,6 @@
 
 .status:after {
   width: var(--width);
+  background-color: var(--base);
   background: var(--color);
 }
