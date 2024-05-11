@@ -60,8 +60,8 @@
 	height: 0px; width: 0px;
 	border: 12px solid;
 	border-color: 
-		darkcyan
-		darkcyan
+	#22F604
+	#22F604
 		transparent
 		transparent;
 	transform: rotate(225deg); 
@@ -74,7 +74,8 @@
 	top: 0px; right: 0px;
 	display: block;
 	height: 12px; width: 16px;
-	background-color: darkcyan;
+	/* background-color: #4992FF; */
+	background-color: #22F604;
 	transform: 
 	rotate(-45deg) 
 	translate(2px, 1px);
@@ -86,8 +87,8 @@
 	height: 0px; width: 0px;
 	border: 12px solid;
 	border-color: 
-		darkcyan
-		darkcyan
+	#22F604
+		#22F604
 		transparent
 		transparent;
 	transform: rotate(45deg); 
@@ -100,7 +101,7 @@
 	top: 0px; right: 0px;
 	display: block;
 	height: 12px; width: 16px;
-	background-color: darkcyan;
+	background-color: #22F604;
 	transform: 
 	rotate(-45deg) 
 	translate(2px, 1px);
