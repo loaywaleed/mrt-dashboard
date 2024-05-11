@@ -10,5 +10,5 @@ const displayTime = () => {
     document.getElementById('time').innerHTML = timeString;
     document.getElementById('ampm').innerHTML = ampm;
 }
-displayTime(); // Display time when page loads
+displayTime();
 setInterval(displayTime, 60000); // Update time every minute
