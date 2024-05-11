@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
 :root {
   --width: 5px;
-  --color: black;
-  --base: grey;
+  --color: #FFFFFF;
+  --base: rgb(20, 30, 48);
   --icon: "⚡";
 }
 
@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .battery:before {
   content: "";
   position: absolute;
@@ -33,6 +34,7 @@
   right: -10px;
   top: 5px;
 }
+
 .battery:after {
   content: "";
   font-size: 40px;
@@ -47,7 +49,5 @@
 
 .status:after {
   width: var(--width);
-  background: white;
+  background: var(--color);
 }
-
-/*# sourceMappingURL=battery.css.map */
