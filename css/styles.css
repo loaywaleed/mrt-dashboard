@@ -1,8 +1,10 @@
+/* Gauges */
+
 .gauge-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100% - 54px - 102px);
+  height: calc(100% - 54px - 108px);
 }
 
 .gauge {
@@ -10,6 +12,8 @@
   height: 100%;
 }
 
+
+/* Card */
 .card {
   width: 500px;
   height: 300px;
@@ -40,4 +44,64 @@
 
 .card-item p {
   font-size: 2.5em;
+}
+
+
+/* Blinkers */
+.blinkers {
+  display: flex;
+	border: 1px solid white;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
+}
+
+
+.arrow-left {
+	position: relative;
+	height: 0px; width: 0px;
+	border: 12px solid;
+	border-color: 
+		darkcyan
+		darkcyan
+		transparent
+		transparent;
+	transform: rotate(225deg); 
+}
+
+.arrow-left:before {
+	content: '';
+	position: absolute;
+	top: 0px; right: 0px;
+	display: block;
+	height: 12px; width: 16px;
+	background-color: darkcyan;
+	transform: 
+	rotate(-45deg) 
+	translate(2px, 1px);
+}
+
+
+.arrow-right {
+	position: relative;
+	height: 0px; width: 0px;
+	border: 12px solid;
+	border-color: 
+		darkcyan
+		darkcyan
+		transparent
+		transparent;
+	transform: rotate(45deg); 
+}
+
+.arrow-right:before {
+	content: '';
+	position: absolute;
+	top: 0px; right: 0px;
+	display: block;
+	height: 12px; width: 16px;
+	background-color: darkcyan;
+	transform: 
+	rotate(-45deg) 
+	translate(2px, 1px);
 }

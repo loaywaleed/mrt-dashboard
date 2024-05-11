@@ -1,7 +1,7 @@
 header {
-  height: 60px;
+  height: 30px;
   width: calc(100% - 4px);
-  border: 2px solid white;
+  /* border: 2px solid white; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@ header {
 
 .time-text {
   font-size: 40px;
-  margin-top: 7px;
+  margin-top: 10px;
   margin-left: 15px;
   font-weight: 500;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

@@ -11,6 +11,7 @@
 #battery {
   display: flex;
   justify-content: center;
+  font-size: 2.3em;
 }
 
 .battery {
