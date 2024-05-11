@@ -19,7 +19,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid yellow; */
     width: 25%;
     font-family: 'aga bold';
 }
@@ -32,7 +31,6 @@ footer .middle-footer-item {
     margin: 0;
     color: #fac86b;
     font-size: 1.9em;
-    /* border-bottom: 1px solid #fac86b; */
 }
 
 .footer-item p {

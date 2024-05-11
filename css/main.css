@@ -38,7 +38,6 @@
 
 .card-item h2 {
   font-size: 1.9em;
-  /* color: #f0f0f0a8; */
   color: #fac86b;
 }
 
@@ -50,7 +49,6 @@
 /* Blinkers */
 .blinkers {
   display: flex;
-	border: 1px solid white;
   flex-direction: row;
   justify-content: space-around;
   height: 30px;
