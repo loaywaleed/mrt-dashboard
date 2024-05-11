@@ -65,6 +65,7 @@
 		transparent
 		transparent;
 	transform: rotate(225deg); 
+	display: none; /* hidden unless blinking */
 }
 
 .arrow-left:before {
@@ -90,6 +91,7 @@
 		transparent
 		transparent;
 	transform: rotate(45deg); 
+	display: none; /* hidden unless blinking */
 }
 
 .arrow-right:before {
@@ -115,5 +117,6 @@
   }
   
   .blink {
+	display: block; /* show when blinking */
 	animation: blink 1s infinite;
   }
