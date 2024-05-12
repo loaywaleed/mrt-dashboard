@@ -9,29 +9,30 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/battery.css">
 </head>
+
 <body>
   <header>
     <p class="time-text"><span id="time"></span><span class="time-sub-text" id="ampm"></span></p>
   </header>
   <section id="blinkers" class="blinkers">
-			<div class="arrow-left blink"></div>
-      <div class="arrow-right blink"></div>
+    <div class="arrow-left blink"></div>
+    <div class="arrow-right blink"></div>
   </section>
   <main class="gauge-container">
     <div id="container-1" class="gauge"></div>
-      <div class="card">
-        <div class="card-item" id="battery">
-          <data class='battery status'></data>
-        </div>
-        <div class="card-item">
-          <h2 id="temperature">Temperature</h2>
-          <p>200 C</p>
-        </div>
-        <div class="card-item">
-          <h2 id="range">Cruising Range</h2>
-          <p id="range">50 km</p>
-        </div>
+    <div class="card">
+      <div class="card-item" id="battery">
+        <data class='battery status'></data>
       </div>
+      <div class="card-item">
+        <h2 id="temperature">Temperature</h2>
+        <p>200 C</p>
+      </div>
+      <div class="card-item">
+        <h2 id="range">Cruising Range</h2>
+        <p id="range">50 km</p>
+      </div>
+    </div>
     </div>
     <div id="container-2" class="gauge"></div>
   </main>
@@ -57,6 +58,8 @@
   <script src="scripts/gauges.js"></script>
   <script src="scripts/app.js"></script>
   <script src="scripts/battery.js"></script>
+  <script src="/node_modules/socket.io-client/dist/socket.io.js"></script>
+  <script src="scripts/api.js"></script>
 </body>
 
 </html>
