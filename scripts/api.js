@@ -1,3 +1,5 @@
+
+
 const socket = io("http://localhost:5000/");
 
 // Listen for 'message' event from the server
@@ -8,4 +10,7 @@ socket.on('message', () => {
 
 socket.on('voltage', (data) => {
     console.log('voltage data received', data);
+    console.log(data.voltage)
+    document.getElementById("voltage").innerText = data.voltage + ' V';
+
 });
