@@ -8,7 +8,6 @@
 footer {
     height: 100px;
     width: calc(100% - 2px);
-    border: 2px solid white;
     display: flex;
     justify-content: center;
 
@@ -40,8 +39,8 @@ footer .middle-footer-item {
 }
 
 .ray {
-    height: 2px;
-    width: 120px;
+    height: 3px;
+    width: 140px;
     margin-bottom: 7px;
     background-image: linear-gradient(to right, rgba(0, 0, 255, 0.1), #fac86b34, #fac86b34, #fac86b34, rgba(0, 0, 255, 0));
 }
