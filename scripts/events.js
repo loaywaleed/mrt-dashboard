@@ -12,3 +12,5 @@ socket.on('vi_range', (data) => {
     document.getElementById("voltage").innerText = data.voltage + ' V';
     document.getElementById("current").innerText = data.current + ' A';
 });
+
+
