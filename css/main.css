@@ -1,127 +1,126 @@
 /* Gauges */
 
 .gauge-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: calc(100% - 54px - 120px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 54px - 120px);
 }
 
 .gauge {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 /* Card */
 .card {
-	width: 500px;
-	height: 300px;
-	background: rgb(17, 4, 134);
-	border-radius: 15px;
-	/* box-shadow: rgb(0, 0, 0, 0.7) 5px 10px 50px, rgb(0, 0, 0, 0.7) -5px 0px 250px; */
-	display: flex;
-	color: white;
-	justify-content: start;
-	flex-direction: column;
-	background: linear-gradient(to right, rgb(20, 30, 48), #100c2a32);
-	transition: all 0.3s ease-in-out;
-	border: 2px solid #fac86b;
-	text-justify: center;
-	text-align: center;
+  width: 500px;
+  height: 300px;
+  background: rgb(17, 4, 134);
+  border-radius: 15px;
+  /* box-shadow: rgb(0, 0, 0, 0.7) 5px 10px 50px, rgb(0, 0, 0, 0.7) -5px 0px 250px; */
+  display: flex;
+  color: white;
+  justify-content: start;
+  flex-direction: column;
+  background: linear-gradient(to right, rgb(20, 30, 48), #100c2a32);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #fac86b;
+  text-justify: center;
+  text-align: center;
 }
 
 .card-item {
-	margin-top: 9%;
-	font-family: 'aga bold';
+  margin-top: 9%;
+  font-family: "aga bold";
 }
 
 .card-item h2 {
-	font-size: 1.9em;
-	color: #fac86b;
+  font-size: 1.9em;
+  color: #fac86b;
 }
 
 .card-item p {
-	font-size: 2.5em;
+  font-size: 2.5em;
 }
-
 
 /* Blinkers */
 .blinkers {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
 }
 
-
-.arrow-left {
-	position: relative;
-	height: 0px;
-	width: 0px;
-	border: 12px solid;
-	border-color:
-		#22F604 #22F604 transparent transparent;
-	transform: rotate(225deg);
-	display: none;
-	/* hidden unless blinking */
+#arrow-left {
+  position: relative;
+  height: 0px;
+  width: 0px;
+  border: 12px solid;
+  border-color: #22f604 #22f604 transparent transparent;
+  transform: rotate(225deg);
+  /* opacity: 0; */
+  /* hidden unless blinking */
 }
 
-.arrow-left:before {
-	content: '';
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	display: block;
-	height: 12px;
-	width: 16px;
-	/* background-color: #4992FF; */
-	background-color: #22F604;
-	transform:
-		rotate(-45deg) translate(2px, 1px);
+#arrow-left:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  height: 12px;
+  width: 16px;
+  /* background-color: #4992FF; */
+  background-color: #22f604;
+  transform: rotate(-45deg) translate(2px, 1px);
 }
 
-
-.arrow-right {
-	position: relative;
-	height: 0px;
-	width: 0px;
-	border: 12px solid;
-	border-color:
-		#22F604 #22F604 transparent transparent;
-	transform: rotate(45deg);
-	display: none;
-	/* hidden unless blinking */
+#arrow-right {
+  position: relative;
+  height: 0px;
+  width: 0px;
+  border: 12px solid;
+  border-color: #22f604 #22f604 transparent transparent;
+  transform: rotate(45deg);
+  /* opacity: 0; */
+  /* hidden unless blinking */
 }
 
-.arrow-right:before {
-	content: '';
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	display: block;
-	height: 12px;
-	width: 16px;
-	background-color: #22F604;
-	transform:
-		rotate(-45deg) translate(2px, 1px);
+#arrow-right:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  height: 12px;
+  width: 16px;
+  background-color: #22f604;
+  transform: rotate(-45deg) translate(2px, 1px);
 }
 
 /* Blinking animation */
 @keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
 
-	0%,
-	100% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
+  50% {
+    opacity: 0;
+  }
 }
 
 .blink {
-	display: block;
-	/* show when blinking */
-	animation: blink 1s infinite;
+  display: block;
+  /* show when blinking */
+  animation: blink 1s infinite;
+}
+
+.stop-blinking {
+  border-color: #20f60400 #20f60400 transparent transparent !important;
+}
+
+.stop-blinking::before {
+  background-color: #20f60400 !important;
 }
