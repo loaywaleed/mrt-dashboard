@@ -44,3 +44,9 @@ socket.on("blinkers", (data) => {
       throw new Error("Invalid blinker signal");
   }
 });
+
+socket.on("battery_temperature", (data) => {
+  const temperature_view = document.getElementById("temperature");
+  console.log("battery temperature data received", data);
+  temperature_view.innerText = data.temperature + " °C";
+});
