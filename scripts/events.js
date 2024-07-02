@@ -14,7 +14,7 @@ socket.on("vi_range", (data) => {
   console.log("current, voltage, range data received", data);
   document.getElementById("voltage").innerText = data.voltage + " V";
   document.getElementById("current").innerText = data.current + " A";
-  document.getElementById("range").innerText = data.range + " ";
+  document.getElementById("range").innerText = data.range + " KM";
 });
 
 socket.on("blinkers", (data) => {
