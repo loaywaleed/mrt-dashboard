@@ -17,6 +17,7 @@ socket.on("vi_range", (data) => {
   document.getElementById("range").innerText = data.range + " KM";
 });
 
+/* Blinking Signals */
 socket.on("blinkers", (data) => {
   const blinker_signal = data.blinkers;
   console.log("blinker data received", data);
