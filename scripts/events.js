@@ -12,6 +12,9 @@ socket.on("vi", (data) => {
   document.getElementById("current").innerText = data.current + " A";
 });
 
+socket.on("range", (data) => {
+  document.getElementById("range").innerText = data.range + " V";
+});
 socket.on("distance", (data) => {
   const distance_travelled = document.getElementById("distance-travelled");
   distance_travelled.innerText = data.distance + " km";
