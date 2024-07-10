@@ -7,10 +7,14 @@ const LEFT = 2;
 const ON = 3;
 
 /* Voltage, Current, Cruising Range */
-socket.on("vi_range", (data) => {
+socket.on("vi", (data) => {
   document.getElementById("voltage").innerText = data.voltage + " V";
   document.getElementById("current").innerText = data.current + " A";
-  document.getElementById("range").innerText = data.range + " KM";
+});
+
+socket.on("distance", (data) => {
+  const distance_travelled = document.getElementById("distance-travelled");
+  distance_travelled.innerText = data.distance + " km";
 });
 
 /* Blinking Signals */
