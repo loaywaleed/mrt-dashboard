@@ -1,6 +1,14 @@
+import socket from "./socket.js";
+
 const root = document.querySelector(":root");
 const indicator = document.querySelector(".battery");
-const batteryLevel = 90;
+
+let batteryLevel = 90;
+
+socket.on("soc", (data) => {
+  batteryLevel = data.soc;
+  monitor(batteryLevel);
+});
 
 const monitor = (battery) => {
   const percent = Math.floor(battery);
