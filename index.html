@@ -15,7 +15,7 @@
   <script defer type="module" src="scripts/socket.js"></script>
   <script defer type="module"src="scripts/gauges.js"></script>
   <script defer src="scripts/app.js"></script>
-  <script defer src="scripts/battery.js"></script>
+  <script defer type="module" src="scripts/battery.js"></script>
   <script defer type="module" src="scripts/events.js"></script>
 </head>
 
@@ -52,9 +52,9 @@
       <p id="current">N/A</p>
     </div>
     <div class="footer-item middle-footer-item">
-      <h2 id="distance-travelled">Distance</h2>
+      <h2>Distance</h2>
       <div class="ray"></div>
-      <p>200 km</p>
+      <p id="distance-travelled">200 km</p>
     </div>
     <div class="footer-item">
       <h2>Voltage</h2>
