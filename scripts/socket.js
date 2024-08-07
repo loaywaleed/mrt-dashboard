@@ -1,2 +1,2 @@
-const socket = io("http://52.23.245.163/");
+const socket = io("http://localhost:5000");
 export default socket;

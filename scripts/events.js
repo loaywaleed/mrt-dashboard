@@ -13,11 +13,11 @@ socket.on("vi", (data) => {
 });
 
 socket.on("range", (data) => {
-  document.getElementById("range").innerText = data.range + " V";
+  document.getElementById("range").innerText = data.range + " KM";
 });
 socket.on("distance", (data) => {
   const distance_travelled = document.getElementById("distance-travelled");
-  distance_travelled.innerText = data.distance + " km";
+  distance_travelled.innerText = data.distance + " KM";
 });
 
 /* Blinking Signals */
